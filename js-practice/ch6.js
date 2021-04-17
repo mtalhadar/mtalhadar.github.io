@@ -1,13 +1,14 @@
-let protoRabbit = {};
-protoRabbit.type = '';
-protoRabbit.speak = function speak(line) { console.log(" ${this.type} Rabbit says '${line}' ") };
+class Rabbit{
+    constructor(type){
+        this.type=type;
+    }
 
-protoRabbit.type = "kaala";
+    speak(line){
+        console.log(`the ${this.type} rabbit says "${line}"`);
+    }
+}
 
-protoRabbit.speak("YEET");
+killerRabbit=new Rabbit("nigga");
+killerRabbit.speak("wassup foo");
 
-let rabbit = {};
-rabbit.speak = function(line) {
-console.log(`The rabbit says '${line}'`);
-};
-rabbit.speak("YEET")
+killerRabbit.gayness="alot";
